@@ -1,0 +1,12 @@
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.csproj.AssemblyReference.cache
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.AssemblyInfoInputs.cache
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.AssemblyInfo.cs
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.csproj.CoreCompileInputs.cache
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\bin\Debug\net5.0\Université.Models.deps.json
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\bin\Debug\net5.0\Université.Models.dll
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\bin\Debug\net5.0\ref\Université.Models.dll
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\bin\Debug\net5.0\Université.Models.pdb
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.dll
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\ref\Université.Models.dll
+C:\Users\thesw\Documents\Cours\M1\INFO_04 -ARCHITECTURE DES SYSTÈMES D'INFORMATION\ProjetTD\Université\Université.Models\obj\Debug\net5.0\Université.Models.pdb
