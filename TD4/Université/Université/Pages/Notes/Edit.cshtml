@@ -1,0 +1,96 @@
+﻿@page
+@model Université.Pages.Notes.EditModel
+
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Saisie des Notes - Choisisser l'UE</h1> @Html.Raw(Model.Mode)
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @switch(Model.Mode)
+        {
+            case EditModel.NoteMode.UeChoice :
+                <form asp-page-handler="ue" method="post">
+            
+                    <div class="form-group">
+                        <label class="control-label">Nom UE</label>
+                        <select class="form-control" name="id" asp-items="ViewBag.LUEID"></select>
+                        <span  class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Charger les notes de cette UE" class="btn btn-primary" />
+                    </div>
+                </form>
+                break;
+            case EditModel.NoteMode.List :
+                <form asp-page-handler="note" method="post">
+                    <input name="UEID" type="hidden" value="@Model.UE.ID">
+                    @if (Model.Errors.Count > 0)
+                    {
+                        <div class="alert alert-danger">
+                            <div class="text-danger">Erreur :</div>
+                            <ul>
+                                @foreach (var error in Model.Errors)
+                                {
+                                    <li>@error</li>
+                                }
+                            </ul>
+                    </div>
+                    }
+                    <div class="form-group">
+                        <input type="submit" value="Enregistrer les notes de cette UE" class="btn btn-primary" />
+                    </div>
+
+                    <table class="form-group">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Nom étudiant
+                                </th>
+                                <th>
+                                    Note /20
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{int i = 0;}
+                            @foreach(var etud in Model.UE.Formation.EtudiantsInscrits)
+                            {
+                                <tr>
+                                    <th>
+                                        @Html.Raw(etud.NomComplet)
+                                        <input name="ListeEtud[@Html.Raw(i)].EtudiantId" type="hidden" value="@etud.ID" /> 
+                                    </th>
+                                    <th>
+                                        @{
+                                            Université.Entity.Note note = Model.Notes.FirstOrDefault(n => n.RelationEtudiant.LEtudiantID == etud.ID);
+
+                                            if(note != null)
+                                            {
+                                                <input type="text" name="ListeEtud[@Html.Raw(i)].NoteValeur" value="@note.Valeur">
+                                            }
+                                            else
+                                            {
+                                                <input type="text" name="ListeEtud[@Html.Raw(i)].NoteValeur">
+                                            }
+                                        }
+                                    </th>
+                                </tr>
+                                i++;
+                            }
+                        </tbody>
+                    </table>
+                </form>
+                
+            break;
+            default: break;
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
